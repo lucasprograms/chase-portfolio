@@ -1,6 +1,5 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import HeaderLink from './header-link/header-link'
 import Logo from '../../images/svg/logo.inline.svg'
 

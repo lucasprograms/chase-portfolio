@@ -1,13 +1,12 @@
 import * as React from 'react'
 import BlobHero from '../images/svg/blob-hero.inline.svg'
-import Breathwrk from '../images/svg/case-studies/breathwrk.inline.svg'
-import Bhuku from '../images/svg/case-studies/bhuku.inline.svg'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import CaseStudy from '../components/case-study'
 
-const IndexPage = () => (
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <section
@@ -32,7 +31,7 @@ const IndexPage = () => (
         title="Breathwrk"
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
       >
-        <Breathwrk />
+        <StaticImage src="../images/png/breathwrk.png" />
       </CaseStudy>
     </section>
     <section>
@@ -40,7 +39,7 @@ const IndexPage = () => (
         title="bhuku"
         blurb="Nostrud veniam non minim duis consequat laboris ut officia fugiat esse. Ut culpa amet ea sit. Reprehenderit ex consequat sit fugiat elit sunt elit."
       >
-        <Bhuku />
+        <StaticImage src="../images/png/bhuku.png" />
       </CaseStudy>
     </section>
   </Layout>
