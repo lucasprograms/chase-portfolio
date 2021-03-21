@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.border-transparent {
+  border-color: transparent;
+}
+
+.border-black {
+  border-color: black;
+}
+
 @font-face {
   font-family: 'Karla';
   src: local('Karla'), url('../fonts/Karla/Karla-Medium.ttf') format('truetype');
@@ -30,24 +38,4 @@
   font-family: 'Butler Bold';
   src: local('Butler Bold'),
     url('../fonts/Butler/Butler_Bold.otf') format('opentype');
-}
-
-html {
-  font-family: 'Karla';
-}
-
-h1 {
-  font-family: 'Butler Bold';
-  font-weight: 700;
-  font-size: 48px;
-}
-
-h2 {
-  font-family: 'Butler';
-  font-size: 36px;
-}
-
-h3 {
-  font-family: 'DM Mono';
-  font-size: 24px;
 }

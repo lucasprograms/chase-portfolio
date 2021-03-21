@@ -6,7 +6,7 @@ import Logo from '../../images/svg/logo.inline.svg'
 
 const Header = ({ email }) => (
   <header className="flex lg:justify-between justify-start z-50 items-center">
-    <div className="flex-1 flex z-50 items-center">
+    <div className="flex-1 flex z-50 items-center justify-between lg:justify-start">
       <div className="flex-1 relative bottom-2" style={{ maxWidth: '200px' }}>
         <Logo />
       </div>

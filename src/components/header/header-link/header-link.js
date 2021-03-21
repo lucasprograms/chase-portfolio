@@ -5,8 +5,8 @@ import { Link } from 'gatsby'
 const Header = ({ title, to }) => (
   <Link
     to={to}
-    className="font-sans text-lg leading-5 no-underline mr-5 border-b-4 border-opacity-5 lg:border-orange lg:border-opacity-0 hover:border-opacity-100"
-    activeClassName="border-opacity-100 lg:border-opacity-100"
+    className="border-transparent mr-5 font-sans text-lg leading-5 border-b-4 hover:border-orange"
+    activeClassName="border-black lg:border-orange"
   >
     {title}
   </Link>
