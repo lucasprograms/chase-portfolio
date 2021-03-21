@@ -1,32 +1,29 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import * as React from 'react'
+import PropTypes from 'prop-types'
+import { Link } from 'gatsby'
+import Logo from '../images/svg/logo.inline.svg'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <header className="flex lg:justify-between justify-start z-50">
+    <div class="flex-1 flex z-50">
+      <Logo />
+      <div className="flex ml-10">
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className="font-sans text-lg relative top-2 no-underline border-b-4 border-transparent hover:border-yellow-500"
         >
-          {siteTitle}
-        </Link>
-      </h1>
+          work
+        </Link>{' '}
+        <Link
+          to="/about/"
+          className="font-sans text-lg ml-10 relative top-2 no-underline border-b-4 border-transparent hover:border-yellow-500"
+        >
+          about
+        </Link>{' '}
+      </div>
+    </div>
+    <div class="font-sans text-lg relative top-2 z-50 hidden lg:block">
+      chase.mccain3@gmail.com
     </div>
   </header>
 )
