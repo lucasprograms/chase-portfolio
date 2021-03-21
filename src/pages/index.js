@@ -24,7 +24,6 @@ const IndexPage = () => (
         </p>
       </div>
       <div className="absolute lg:static top-0">
-        {' '}
         <BlobHero className="absolute top-0" />
       </div>
     </section>
@@ -44,7 +43,6 @@ const IndexPage = () => (
         <Bhuku />
       </CaseStudy>
     </section>
-    <footer className="mt-20"></footer>
   </Layout>
 )
 

@@ -18,20 +18,20 @@ const Header = ({ email, author, linkedInUrl }) => (
       </a>
     </div>
     <div className="flex flex-col lg:flex-row justify-start lg:justify-between">
-      <div class="font-sans mb-2 items-center flex ">
+      <div className="font-sans mb-2 items-center flex ">
         <Copyright className="mr-2" />
         <span>{author}</span>
       </div>
-      <div class="lg:flex">
+      <div className="lg:flex">
         <a
           href={'mailto:' + email}
-          class="font-sans mb-2 items-center flex lg:mr-8"
+          className="font-sans mb-2 items-center flex lg:mr-8"
         >
           <Email className="mr-2" />
           <span>{email}</span>
         </a>
         {linkedInUrl && (
-          <a href={linkedInUrl} class="font-sans mb-2 items-center flex ">
+          <a href={linkedInUrl} className="font-sans mb-2 items-center flex ">
             <LinkedIn className="mr-2" />
             <span>LinkedIn</span>
           </a>
