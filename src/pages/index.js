@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => (
         title="Breathwrk"
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
       >
-        <StaticImage src="../images/png/breathwrk.png" />
+        <StaticImage src="../images/png/breathwrk.png" alt="breathwrk" />
       </CaseStudy>
     </section>
     <section>
@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => (
         title="bhuku"
         blurb="Nostrud veniam non minim duis consequat laboris ut officia fugiat esse. Ut culpa amet ea sit. Reprehenderit ex consequat sit fugiat elit sunt elit."
       >
-        <StaticImage src="../images/png/bhuku.png" />
+        <StaticImage src="../images/png/bhuku.png" alt="bhuku" />
       </CaseStudy>
     </section>
   </Layout>

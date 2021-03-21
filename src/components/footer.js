@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import LinkedIn from '../images/svg/icons/linkedin.inline.svg'
 import Copyright from '../images/svg/icons/copyright.inline.svg'
 import Email from '../images/svg/icons/email.inline.svg'
-import { Link } from 'gatsby'
 
 const Header = ({ email, author, linkedInUrl }) => (
   <footer>
