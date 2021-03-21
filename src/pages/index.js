@@ -28,7 +28,7 @@ const IndexPage = () => (
         <BlobHero className="absolute top-0" />
       </div>
     </section>
-    <section className="flex justify-center flex-1">
+    <section>
       <CaseStudy
         title="Breathwrk"
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."

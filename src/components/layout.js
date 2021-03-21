@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" style={{ maxWidth: '1280px' }}>
       <div className="m-5">
         <Header
           email={data.site.siteMetadata?.email || `chase.mccain3@gmail.com`}

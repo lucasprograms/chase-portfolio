@@ -7,10 +7,7 @@ import './layout.css'
 
 const Layout = ({ title, blurb, children }) => {
   return (
-    <div
-      className="self-center flex flex-col-reverse justify-between lg:justify-around lg:flex-row shadow-2xl p-8 py-12 mb-20 rounded-mb"
-      style={{ maxWidth: '1200px' }}
-    >
+    <div className="self-center flex flex-col-reverse justify-between lg:justify-around lg:flex-row shadow-2xl p-8 py-12 mb-20 rounded-mb">
       <main className="flex-1">{children}</main>
       <div className="flex flex-col justify-center max-w-md mb-10 lg:mb-0">
         <h3 className="font-serif text-4xl">{title}</h3>
