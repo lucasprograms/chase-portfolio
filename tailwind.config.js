@@ -11,9 +11,16 @@ module.exports = {
       serif: ['Butler'],
       mono: ['DM Mono'],
     },
+    colors: {
+      orange: {
+        DEFAULT: '#EAA300',
+      },
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      translate: ['group-hover'],
+    },
   },
   plugins: [],
 }

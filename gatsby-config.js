@@ -2,7 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `Chase McCain`,
     description: `Chase McCain UI/UX Portfolio`,
-    author: `@lucasprograms`,
+    author: `Chase McCain`,
+    email: 'chase.mccain3@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/chase-mccain',
   },
   plugins: [
     `gatsby-plugin-postcss`,
