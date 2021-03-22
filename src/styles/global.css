@@ -1,5 +1,7 @@
 @tailwind base;
 @tailwind components;
+
+@import url(butler.css);
 @tailwind utilities;
 
 .border-transparent {
@@ -8,23 +10,4 @@
 
 .border-black {
   border-color: black;
-}
-
-@layer base {
-  @font-face {
-    font-family: 'Butler';
-    src: url('../fonts/Butler/Butler_Medium.otf') format('opentype');
-  }
-
-  @font-face {
-    font-family: 'Butler';
-    font-weight: 300px;
-    src: url('../fonts/Butler/Butler_Regular.otf') format('opentype');
-  }
-
-  /* @font-face {
-    font-family: 'Butler';
-    font-weight: 700px;
-    src: url('../fonts/Butler/Butler_Bold.otf') format('opentype');
-  } */
 }

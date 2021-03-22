@@ -1,6 +1,7 @@
 import * as React from 'react'
 import BlobHero from '../images/svg/blob-hero.inline.svg'
 import AboutBlurb from '../components/about-blurb.js'
+import Chase from '../images/svg/chase.inline.svg'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -8,15 +9,23 @@ import SEO from '../components/seo'
 const SecondPage = () => (
   <Layout>
     <SEO title="About" />
-    <div className="grid grid-cols-1 lg:grid-cols-3">
-      <div class="lg:col-span-2">
-        <section class="mb-20">
-          <h1 className="font-serif text-5xl font-bold">
-            Here are some talents I bring to the table:
-          </h1>
-          <p class="font-sans text-base">
-            * Not including my #1 talent, Harry Potter trivia
-          </p>
+    <div className="grid grid-cols-1 lg:grid-cols-3 relative">
+      <div className="lg:col-span-2">
+        <section className="mb-20 flex items-center flex-col lg:flex-row">
+          <div
+            className="rounded-full flex border-4 lg:border-8 border-orange m-10 p-2"
+            style={{ height: '30%', width: '50%' }}
+          >
+            <Chase />
+          </div>
+          <div>
+            <h1 className="font-serif text-5xl font-bold mb-2">
+              Here are some talents I bring to the table:
+            </h1>
+            <p className="font-sans text-base">
+              * Not including my #1 talent, Harry Potter trivia
+            </p>
+          </div>
         </section>
         <section>
           <AboutBlurb
@@ -41,9 +50,7 @@ const SecondPage = () => (
           />
         </section>
       </div>
-      <div className="hidden lg:block" style={{ height: '920px' }}>
-        <BlobHero className="absolute top-0" />
-      </div>
+      <div className="hidden absolute lg:inline-block top-0 right-0 overflow-hidden"></div>
     </div>
   </Layout>
 )
