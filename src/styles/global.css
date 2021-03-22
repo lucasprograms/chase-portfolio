@@ -23,12 +23,6 @@
 }
 
 @font-face {
-  font-family: 'DM Mono';
-  src: local('DMMono-Regular'),
-    url('../fonts/DM-Mono/DMMono-Regular.ttf') format('truetype');
-}
-
-@font-face {
   font-family: 'Butler';
   src: local('Butler'),
     url('../fonts/Butler/Butler_Medium.otf') format('opentype');
