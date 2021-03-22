@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import CaseStudy from '../components/case-study'
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section
@@ -22,7 +22,10 @@ const IndexPage = ({ data }) => (
           I learn to create products that make them happy.
         </p>
       </div>
-      <div className="absolute lg:static top-0">
+      <div
+        className="absolute lg:static top-0 left-0 right-0 w-full overflow-x-hidden"
+        style={{ height: '920px' }}
+      >
         <BlobHero className="absolute top-0" />
       </div>
     </section>
