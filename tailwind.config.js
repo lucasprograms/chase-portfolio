@@ -9,7 +9,6 @@ module.exports = {
     fontFamily: {
       sans: ['Karla'],
       serif: ['Butler'],
-      mono: ['DM Mono'],
     },
     colors: {
       orange: {

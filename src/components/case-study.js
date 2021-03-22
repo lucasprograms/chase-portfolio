@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 
 import ArrowRight from '../images/svg/arrow-right.inline.svg'
 
-import './layout.css'
-
 const Layout = ({ title, blurb, children }) => {
   return (
     <div className="self-center flex flex-col-reverse justify-between lg:justify-around lg:flex-row shadow-2xl p-8 py-12 mb-20 rounded-mb">

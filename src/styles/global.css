@@ -10,26 +10,21 @@
   border-color: black;
 }
 
-@font-face {
-  font-family: 'Karla';
-  src: local('Karla'), url('../fonts/Karla/Karla-Medium.ttf') format('truetype');
-}
+@layer base {
+  @font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler/Butler_Medium.otf') format('opentype');
+  }
 
-@font-face {
-  font-family: 'Karla Bold';
-  font-weight: 700;
-  src: local('Karla Bold'),
-    url('../fonts/Karla/Karla-Bold.ttf') format('truetype');
-}
+  @font-face {
+    font-family: 'Butler';
+    font-weight: 300px;
+    src: url('../fonts/Butler/Butler_Regular.otf') format('opentype');
+  }
 
-@font-face {
-  font-family: 'Butler';
-  src: local('Butler'),
-    url('../fonts/Butler/Butler_Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Butler Bold';
-  src: local('Butler Bold'),
-    url('../fonts/Butler/Butler_Bold.otf') format('opentype');
+  /* @font-face {
+    font-family: 'Butler';
+    font-weight: 700px;
+    src: url('../fonts/Butler/Butler_Bold.otf') format('opentype');
+  } */
 }
