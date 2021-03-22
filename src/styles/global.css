@@ -1,8 +1,8 @@
 @tailwind base;
 @tailwind components;
-
-@import url(butler.css);
 @tailwind utilities;
+
+/* these tailwind classes were not applying without these ad-hoc definitions */
 
 .border-transparent {
   border-color: transparent;

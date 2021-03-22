@@ -13,7 +13,7 @@ const IndexPage = () => (
       className="grid grid-cols-1 lg:grid-cols-2"
       style={{ height: '920px' }}
     >
-      <div className="flex flex-col justify-center z-10">
+      <div className="flex flex-col justify-start lg:justify-center z-10 mt-60 md:mt-80 lg:mt-0">
         <h1 className="text-5xl font-serif max-w-md self-center">
           Hey, I’m Chase—I’m a UX Designer and cat enthusiast.{' '}
         </h1>
@@ -40,7 +40,7 @@ const IndexPage = () => (
     <section>
       <CaseStudy
         title="bhuku"
-        blurb="Nostrud veniam non minim duis consequat laboris ut officia fugiat esse. Ut culpa amet ea sit. Reprehenderit ex consequat sit fugiat elit sunt elit."
+        blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
       >
         <StaticImage src="../images/png/bhuku.png" alt="bhuku" />
       </CaseStudy>
