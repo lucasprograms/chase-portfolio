@@ -35,7 +35,11 @@ const IndexPage = () => (
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
         href="//www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=529%3A0"
       >
-        <StaticImage src="../images/png/breathwrk.png" alt="breathwrk" />
+        <StaticImage
+          src="../images/png/breathwrk.png"
+          alt="breathwrk"
+          placeholder="blurred"
+        />
       </CaseStudy>
     </section>
     <section>
@@ -44,7 +48,11 @@ const IndexPage = () => (
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
         href="//www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=633%3A193"
       >
-        <StaticImage src="../images/png/bhuku.png" alt="bhuku" />
+        <StaticImage
+          src="../images/png/bhuku.png"
+          alt="bhuku"
+          placeholder="blurred"
+        />
       </CaseStudy>
     </section>
   </Layout>

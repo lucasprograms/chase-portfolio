@@ -15,6 +15,7 @@ const About = () => (
           <StaticImage
             src="../images/png/chase.png"
             alt="Chase"
+            placeholder="none"
             className="w-48 lg:w-72 mb-5 lg:mb-0"
           />
           <div className="ml-0 lg:ml-10">
