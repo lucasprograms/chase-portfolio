@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
-const SecondPage = () => (
+const About = () => (
   <Layout>
     <SEO title="About" />
     <div className="grid grid-cols-1 lg:grid-cols-3 relative">
@@ -56,4 +56,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default About

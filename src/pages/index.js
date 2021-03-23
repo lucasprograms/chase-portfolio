@@ -14,8 +14,8 @@ const IndexPage = () => (
       style={{ height: '920px' }}
     >
       <div className="flex flex-col justify-start lg:justify-center z-10 mt-60 md:mt-80 lg:mt-0">
-        <h1 className="text-5xl font-serif max-w-md self-center">
-          Hey, I’m Chase—I’m a UX Designer and cat enthusiast.{' '}
+        <h1 className="text-5xl font-serif max-w-md self-center mb-5">
+          Hey, I’m Chase—I’m a UX Designer and cat enthusiast.
         </h1>
         <p className="font-sans text-2xl max-w-md self-center">
           I love listening to and exploring people’s experiences, and using what
@@ -33,6 +33,7 @@ const IndexPage = () => (
       <CaseStudy
         title="Breathwrk"
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
+        href="//www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=529%3A0"
       >
         <StaticImage src="../images/png/breathwrk.png" alt="breathwrk" />
       </CaseStudy>
@@ -41,6 +42,7 @@ const IndexPage = () => (
       <CaseStudy
         title="bhuku"
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
+        href="//www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=633%3A193"
       >
         <StaticImage src="../images/png/bhuku.png" alt="bhuku" />
       </CaseStudy>

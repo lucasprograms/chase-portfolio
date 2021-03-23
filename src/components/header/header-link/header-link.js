@@ -2,7 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-const Header = ({ title, to }) => (
+const HeaderLink = ({ title, to }) => (
   <Link
     to={to}
     className="border-transparent mr-5 font-sans text-lg leading-5 border-b-4 hover:border-orange"
@@ -12,14 +12,9 @@ const Header = ({ title, to }) => (
   </Link>
 )
 
-Header.propTypes = {
-  title: PropTypes.string,
-  to: PropTypes.string,
+HeaderLink.propTypes = {
+  title: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired,
 }
 
-Header.defaultProps = {
-  title: ``,
-  to: ``,
-}
-
-export default Header
+export default HeaderLink

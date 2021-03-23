@@ -5,7 +5,7 @@ import LinkedIn from '../images/svg/icons/linkedin.inline.svg'
 import Copyright from '../images/svg/icons/copyright.inline.svg'
 import Email from '../images/svg/icons/email.inline.svg'
 
-const Header = ({ email, author, linkedInUrl }) => (
+const Footer = ({ email, author, linkedInUrl }) => (
   <footer className="mt-20">
     <div className="flex flex-col justify-center mb-20">
       <h1 className="self-center text-5xl font-serif mb-1">Let's chat!</h1>
@@ -40,16 +40,14 @@ const Header = ({ email, author, linkedInUrl }) => (
   </footer>
 )
 
-Header.propTypes = {
-  email: PropTypes.string,
-  author: PropTypes.string,
+Footer.propTypes = {
+  email: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
   linkedInUrl: PropTypes.string,
 }
 
-Header.defaultProps = {
-  email: ``,
-  author: ``,
+Footer.defaultProps = {
   linkedInUrl: ``,
 }
 
-export default Header
+export default Footer
