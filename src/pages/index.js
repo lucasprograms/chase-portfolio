@@ -33,7 +33,7 @@ const IndexPage = () => (
       <CaseStudy
         title="Breathwrk"
         blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
-        href="//www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=529%3A0"
+        href="/breathwrk"
       >
         <StaticImage
           src="../images/png/breathwrk.png"
