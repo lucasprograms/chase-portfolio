@@ -1,9 +1,9 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 
-import LinkedIn from '../images/svg/icons/linkedin.inline.svg'
-import Copyright from '../images/svg/icons/copyright.inline.svg'
-import Email from '../images/svg/icons/email.inline.svg'
+import LinkedIn from '../../images/svg/icons/linkedin.inline.svg'
+import Copyright from '../../images/svg/icons/copyright.inline.svg'
+import Email from '../../images/svg/icons/email.inline.svg'
 
 const Footer = ({ email, author, linkedInUrl }) => (
   <footer className="mt-20">

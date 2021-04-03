@@ -1,7 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 
-import ArrowRight from '../images/svg/arrow-right.inline.svg'
+import ArrowRight from '../../images/svg/arrow-right.inline.svg'
 
 const CaseStudy = ({ title, blurb, children, href }) => {
   return (

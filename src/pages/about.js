@@ -1,10 +1,10 @@
 import * as React from 'react'
-import BlobHero from '../images/svg/blob-hero.inline.svg'
-import AboutBlurb from '../components/about-blurb.js'
 import { StaticImage } from 'gatsby-plugin-image'
 
+import AboutBlurb from '../components/about/about-blurb.js'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import BlobHero from '../images/svg/blob-hero.inline.svg'
 
 const About = () => (
   <Layout>
