@@ -9,7 +9,7 @@ import BlobHero from '../images/svg/blob-hero.inline.svg'
 const About = () => (
   <Layout>
     <SEO title="About" />
-    <div className="grid grid-cols-1 lg:grid-cols-3 relative">
+    <div className="px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-3 relative">
       <div className="lg:col-span-2 lg:px-20">
         <section className="my-20 flex items-center flex-col lg:flex-row">
           <StaticImage

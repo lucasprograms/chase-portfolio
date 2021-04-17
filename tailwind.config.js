@@ -13,6 +13,9 @@ module.exports = {
       orange: {
         DEFAULT: '#EAA300',
       },
+      white: {
+        DEFAULT: '#FFFFFF',
+      },
     },
   },
   variants: {
