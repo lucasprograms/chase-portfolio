@@ -8,7 +8,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const contents = [
   { label: 'Introduction', to: 'introduction' },
-  { label: 'Defining the Problem', to: 'the_problem' },
+  { label: 'Defining the Problem', to: 'define' },
   { label: 'Research', to: 'research' },
   { label: 'Design', to: 'design' },
   { label: 'Final Prototype', to: 'prototype' },

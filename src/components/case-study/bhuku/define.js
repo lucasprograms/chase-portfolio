@@ -26,7 +26,7 @@ const Define = ({ title, highlightColor }) => {
         <div className="lg:col-span-3 hidden lg:flex justify-end">
           <StaticImage
             src="../../../images/png/bhuku/define/popular-in-fiction.png"
-            alt="breathwrk-hero"
+            alt="popular-in-fiction"
             placeholder="blurred"
           />
         </div>
@@ -35,7 +35,7 @@ const Define = ({ title, highlightColor }) => {
         <div className="lg:col-span-3 flex justify-center">
           <StaticImage
             src="../../../images/png/bhuku/define/goodreads.png"
-            alt="breathwrk-hero"
+            alt="goodreads"
             placeholder="blurred"
           />
         </div>

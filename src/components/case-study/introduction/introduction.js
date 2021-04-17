@@ -6,7 +6,7 @@ import TableOfContents from './table-of-contents/table-of-contents'
 
 const Introduction = ({ contents, blurbs, highlight, title }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-12">
+    <div className="grid grid-cols-1 lg:grid-cols-12" id="introduction">
       <div className="hidden lg:flex flex-col lg:col-span-3">
         <TableOfContents contents={contents} />
       </div>

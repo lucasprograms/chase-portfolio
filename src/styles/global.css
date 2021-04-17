@@ -11,3 +11,13 @@
 .border-black {
   border-color: black;
 }
+
+.movie-responsive-height {
+  height: 24rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .movie-responsive-height {
+    height: 48rem;
+  }
+}

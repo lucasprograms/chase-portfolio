@@ -24,7 +24,7 @@ const Define = ({ title, highlightColor }) => {
         <div className="lg:col-span-3">
           <StaticImage
             src="../../../images/png/bhuku/research/nk-the-queen.png"
-            alt="breathwrk-hero"
+            alt="nk-jemisin"
             placeholder="blurred"
           />
         </div>
@@ -34,7 +34,7 @@ const Define = ({ title, highlightColor }) => {
         <div className="lg:col-span-3">
           <StaticImage
             src="../../../images/png/bhuku/research/book-info.png"
-            alt="breathwrk-hero"
+            alt="bhuku-bok-info"
             placeholder="blurred"
           />
         </div>
@@ -46,7 +46,7 @@ const Define = ({ title, highlightColor }) => {
             </span>
             <br />
             <div className="text-center pt-1">
-              <span> - Maddy, weak-brained but hot friend</span>
+              <span> - Maddy, interviewee</span>
             </div>
           </p>
           <p className="text-base font-sans leading-relaxed mt-10">
@@ -67,13 +67,13 @@ const Define = ({ title, highlightColor }) => {
           </span>
           <br />
           <div className="text-center pt-1">
-            <span> - Maddy, weak-brained but hot friend</span>
+            <span> - Maddy, interviewee</span>
           </div>
         </p>
         <div className="lg:col-span-3">
           <StaticImage
             src="../../../images/png/bhuku/research/book-info.png"
-            alt="breathwrk-hero"
+            alt="bhuku-book-info"
             placeholder="blurred"
           />
         </div>
