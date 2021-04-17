@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Introduction from '../components/case-study/introduction/introduction'
 import BreathwrkMain from '../components/case-study/breathwrk/main'
 import { StaticImage } from 'gatsby-plugin-image'
+import TableOfContents from '../components/case-study/introduction/table-of-contents/table-of-contents'
 
 const contents = [
   { label: 'Introduction', to: 'introduction' },
@@ -93,23 +94,26 @@ const BreathwrkPage = () => {
           placeholder="blurred"
         />
       </div>
-      <section className="px-5 2xl:px-0 my-10 lg:my-20">
-        <Introduction
-          title="breathwrk"
-          contents={contents}
-          blurbs={introBlurbs}
-          highlight={{
-            text: 'Check out the final prototype',
-            color: HIGHLIGHT_COLOR,
-          }}
+      <div className="mt-20">
+        <TableOfContents contents={contents} />
+        <section className="px-5 2xl:px-0 my-10 lg:mb-0 lg:mt-20">
+          <Introduction
+            title="breathwrk"
+            contents={contents}
+            blurbs={introBlurbs}
+            highlight={{
+              text: 'Check out the final prototype',
+              color: HIGHLIGHT_COLOR,
+            }}
+          />
+        </section>
+        <BreathwrkMain
+          highlightColor={HIGHLIGHT_COLOR}
+          backgroundColor={BACKGROUND_COLOR}
+          loads={loads}
+          finalThoughts={finalThoughts}
         />
-      </section>
-      <BreathwrkMain
-        highlightColor={HIGHLIGHT_COLOR}
-        backgroundColor={BACKGROUND_COLOR}
-        loads={loads}
-        finalThoughts={finalThoughts}
-      />
+      </div>
     </Layout>
   )
 }

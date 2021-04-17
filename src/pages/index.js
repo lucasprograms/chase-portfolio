@@ -45,6 +45,19 @@ const IndexPage = () => (
       </section>
       <section>
         <CaseStudy
+          title="Partnership for Global Security"
+          blurb="A visually engaging responsive website that addresses both the users’ and organization’s goals."
+          href="/pgs"
+        >
+          <StaticImage
+            src="../images/png/pgs.png"
+            alt="pgs"
+            placeholder="blurred"
+          />
+        </CaseStudy>
+      </section>
+      <section>
+        <CaseStudy
           title="bhuku"
           blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
           href="/bhuku"

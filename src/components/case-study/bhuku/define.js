@@ -28,6 +28,7 @@ const Define = ({ title, highlightColor }) => {
             src="../../../images/png/bhuku/define/popular-in-fiction.png"
             alt="popular-in-fiction"
             placeholder="blurred"
+            height={700}
           />
         </div>
       </div>

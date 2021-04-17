@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import Introduction from '../components/case-study/introduction/introduction'
 import BhukuMain from '../components/case-study/bhuku/main'
 import { StaticImage } from 'gatsby-plugin-image'
+import TableOfContents from '../components/case-study/introduction/table-of-contents/table-of-contents'
 
 const contents = [
   { label: 'Introduction', to: 'introduction' },
@@ -84,27 +85,29 @@ const BreathwrkPage = () => {
       <div style={{ backgroundColor: BACKGROUND_COLOR }}>
         <StaticImage
           src="../images/png/bhuku/hero.png"
-          alt="breathwrk-hero"
+          alt="bhuku-hero"
           placeholder="blurred"
         />
       </div>
-      <section className="px-5 2xl:px-0 my-10 lg:my-20">
-        <Introduction
-          title="bhuku"
-          contents={contents}
-          blurbs={introBlurbs}
-          highlight={{
-            text: 'Check out the final prototype',
-            color: HIGHLIGHT_COLOR,
-          }}
+      <div className="mt-20">
+        <TableOfContents contents={contents} />
+        <section className="px-5 2xl:px-0 my-10 lg:mb-0 lg:mt-20">
+          <Introduction
+            title="bhuku"
+            blurbs={introBlurbs}
+            highlight={{
+              text: 'Check out the final prototype',
+              color: HIGHLIGHT_COLOR,
+            }}
+          />
+        </section>
+        <BhukuMain
+          highlightColor={HIGHLIGHT_COLOR}
+          backgroundColor={BACKGROUND_COLOR}
+          loads={loads}
+          finalThoughts={finalThoughts}
         />
-      </section>
-      <BhukuMain
-        highlightColor={HIGHLIGHT_COLOR}
-        backgroundColor={BACKGROUND_COLOR}
-        loads={loads}
-        finalThoughts={finalThoughts}
-      />
+      </div>
     </Layout>
   )
 }

@@ -26,7 +26,7 @@ const Layout = ({ children, headerBackgroundColor, headerColorInverted }) => {
   `)
 
   return (
-    <div className="overflow-auto">
+    <div>
       <div className="container-fluid 2xl:container mx-auto 2xl:px-5">
         <Header
           email={data.site.siteMetadata?.email || `chase.mccain3@gmail.com`}
