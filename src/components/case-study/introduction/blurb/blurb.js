@@ -7,7 +7,9 @@ const IntroBlurb = ({ title, body }) => {
       <h3 className="text-3xl font-serif">{title}</h3>
       {body.map((text, index) => (
         <p
-          className="text-base font-sans font-light leading-relaxed mt-3"
+          className={`text-base font-sans font-light leading-relaxed mt-3 ${
+            text === 'This was a conceptual project' ? 'italic' : ''
+          }`}
           key={index}
         >
           {text}

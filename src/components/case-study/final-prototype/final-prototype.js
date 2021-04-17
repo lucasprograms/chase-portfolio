@@ -45,15 +45,18 @@ const FinalPrototype = ({
             </a>
           </div>
         </div>
-        <div className="lg:col-span-6 mt-10 grid lg:grid-cols-6">
-          <div className="my-5 lg:col-span-6">
+        <div className="lg:col-span-6 mt-10 grid lg:grid-cols-6 grid-cols-2">
+          <div className="my-5 lg:col-span-6 col-span-2">
             <span className="p-1" style={{ backgroundColor: highlightColor }}>
               "There’s loads more that went into the creation of this feature" —
               Ron Weasley
             </span>
           </div>
-          {loads.map((load) => (
-            <div key={load.title}>
+          {loads.map((load, index) => (
+            <div
+              key={load.title}
+              className={`col-span-1 ${index >= 2 ? 'mt-10' : ''}`}
+            >
               <h5 className="font-bold">{load.title}</h5>
               <ul className="mt-3">
                 {load.items.map((item) => (
@@ -65,7 +68,7 @@ const FinalPrototype = ({
             </div>
           ))}
         </div>
-        <div className="lg:col-span-3 mt-32">
+        <div className="lg:col-span-3 mt-20 lg:mt-32">
           <h4 className="font-serif text-3xl">Final Thoughts</h4>
           {finalThoughts.map((finalThought) => (
             <p key={finalThought} className="mt-10">

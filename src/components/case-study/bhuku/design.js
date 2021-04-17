@@ -21,7 +21,7 @@ const Design = ({ title }) => {
             placeholder="blurred"
           />
         </div>
-        <div className="grid lg:col-span-6 lg:grid-cols-6 mt-20">
+        <div className="grid lg:col-span-6 lg:grid-cols-6 lg:mt-20">
           <div className="hidden lg:flex lg:col-span-3 pr-5 2xl:pr-0">
             <StaticImage
               src="../../../images/png/bhuku/design/author-profile.png"
