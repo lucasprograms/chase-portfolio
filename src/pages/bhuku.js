@@ -43,6 +43,36 @@ const introBlurbs = [
   },
 ]
 
+const loads = [
+  {
+    title: 'Research',
+    items: ['Secondary Research', 'Competitive Analysis', 'User Interviews'],
+  },
+  {
+    title: 'UX Design',
+    items: [
+      'Persona',
+      'Feature Roadmap',
+      'Low-fi Sketch Ideation',
+      'Low-fi Wireframes',
+      'Prototyping',
+    ],
+  },
+  {
+    title: 'UI Design',
+    items: ['Style Tile', 'UI Kit', 'Hi-Fi Mockups'],
+  },
+  {
+    title: 'Testing',
+    items: ['User Testing', 'UX Iterations'],
+  },
+]
+
+const finalThoughts = [
+  'This project was a fun, fast-paced exploration of Material Design UI for Android. Even so, I always seek to bring in as much research as possible, and create products that solve real user needs. ',
+  'The final product solves for my original How Might We statement, creating an app that incentivizes engagement with personalized recommendations, and adheres to Material Design guidelines while still being simple, clean, and beautiful.',
+]
+
 const HIGHLIGHT_COLOR = '#F2B5B8'
 
 const BACKGROUND_COLOR = '#EAECFE'
@@ -72,6 +102,8 @@ const BreathwrkPage = () => {
       <BhukuMain
         highlightColor={HIGHLIGHT_COLOR}
         backgroundColor={BACKGROUND_COLOR}
+        loads={loads}
+        finalThoughts={finalThoughts}
       />
     </Layout>
   )

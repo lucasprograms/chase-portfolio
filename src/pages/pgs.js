@@ -3,7 +3,6 @@ import * as React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Introduction from '../components/case-study/introduction/introduction'
-import { StaticImage } from 'gatsby-plugin-image'
 import Hero from '../images/svg/pgs/hero.inline.svg'
 
 const contents = [

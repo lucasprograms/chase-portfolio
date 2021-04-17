@@ -20,7 +20,7 @@ const Introduction = ({ contents, blurbs, highlight, title }) => {
         {highlight && (
           <a
             className="lg:col-start-4 lg:col-span-3 hover:underline"
-            href="#finalPrototype"
+            href="#prototype"
           >
             <strong
               style={{ backgroundColor: highlight.color }}
