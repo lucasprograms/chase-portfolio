@@ -59,7 +59,7 @@ const IndexPage = () => (
       <section>
         <CaseStudy
           title="bhuku"
-          blurb="A habit-tracking feature in line with the scientific community’s current best practices, fitting seamlessly within Breathwrk’s current design."
+          blurb="A book management app for Android devices with simple, beautiful UI, incentivizing engagement with personally-tailored book recommendations."
           href="/bhuku"
         >
           <StaticImage
