@@ -2,9 +2,15 @@ import * as React from 'react'
 
 const TextBlock = ({ children, textSize }) => (
   <p
-    className={`text-${textSize} font-sans ${
-      textSize === 'lg' && 'font-light'
-    } leading-relaxed mt-10`}
+    className={`${
+      textSize === '2xl'
+        ? 'text-2xl'
+        : textSize === 'xl'
+        ? 'text-xl'
+        : textSize === 'lg'
+        ? 'text-lg'
+        : 'text-base'
+    } font-sans ${textSize === 'lg' && 'font-light'} leading-relaxed mt-10`}
   >
     {children}
   </p>
