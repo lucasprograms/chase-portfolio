@@ -9,7 +9,8 @@ import TableOfContents from '../components/case-study/introduction/table-of-cont
 
 const contents = [
   { label: 'Introduction', to: 'introduction' },
-  { label: 'Defining the Problem', to: 'the_problem' },
+  { label: 'Defining the Problem', to: 'define' },
+  { label: 'Research', to: 'research' },
   { label: 'Design Process', to: 'design' },
   { label: 'Final Prototype', to: 'prototype' },
 ]
@@ -88,17 +89,26 @@ const BreathwrkPage = () => {
     <Layout headerBackgroundColor={BACKGROUND_COLOR}>
       <SEO title="breathwrk" />
       <div style={{ backgroundColor: BACKGROUND_COLOR }}>
-        <StaticImage
-          src="../images/png/breathwrk/hero.png"
-          alt="breathwrk-hero"
-          placeholder="blurred"
-        />
+        <div className="hidden md:block">
+          <StaticImage
+            src="../images/png/breathwrk/hero.png"
+            alt="breathwrk-hero"
+            placeholder="blurred"
+          />
+        </div>
+        <div className="md:hidden relative bottom-24">
+          <StaticImage
+            src="../images/png/breathwrk/hero-mobile.png"
+            alt="breathwrk-hero"
+            placeholder="blurred"
+          />
+        </div>
       </div>
-      <div className="mt-20">
+      <div className="mt-32">
         <TableOfContents contents={contents} />
         <section className="px-5 2xl:px-0 my-10 lg:mb-0 lg:mt-20">
           <Introduction
-            title="breathwrk"
+            title="Breathwrk"
             contents={contents}
             blurbs={introBlurbs}
             highlight={{

@@ -83,13 +83,22 @@ const BreathwrkPage = () => {
     <Layout headerBackgroundColor={BACKGROUND_COLOR}>
       <SEO title="bhuku" />
       <div style={{ backgroundColor: BACKGROUND_COLOR }}>
-        <StaticImage
-          src="../images/png/bhuku/hero.png"
-          alt="bhuku-hero"
-          placeholder="blurred"
-        />
+        <div className="hidden md:block">
+          <StaticImage
+            src="../images/png/bhuku/hero.png"
+            alt="bhuku-hero"
+            placeholder="blurred"
+          />
+        </div>
+        <div className="md:hidden relative bottom-24">
+          <StaticImage
+            src="../images/png/bhuku/hero-mobile.png"
+            alt="bhuku-hero"
+            placeholder="blurred"
+          />
+        </div>
       </div>
-      <div className="mt-20">
+      <div className="mt-32">
         <TableOfContents contents={contents} />
         <section className="px-5 2xl:px-0 my-10 lg:mb-0 lg:mt-20">
           <Introduction

@@ -28,7 +28,7 @@ const Research = ({ highlightColor, title }) => (
           </span>{' '}
           The Before
         </h4>
-        <div className="col-span-1 flex items-center">
+        <div className="col-span-1 flex items-center justify-center lg:justify-start">
           <StaticImage
             src="../../../images/png/breathwrk/research/before-streak.png"
             alt="sustainable-future"
@@ -38,7 +38,7 @@ const Research = ({ highlightColor, title }) => (
         </div>
       </div>
       <div className="col-span-1 flex flex-col justify-center">
-        <h6 className="text-lg font-serif">Streaks</h6>
+        <h6 className="text-xl font-serif mt-10 lg:mt-0">Streaks</h6>
         <TextBlock>
           In my secondary research, I found that extrinsic motivators like
           streaks can actually interfere with intrinsic motivation, especially
@@ -74,7 +74,7 @@ const Research = ({ highlightColor, title }) => (
             height={700}
           />
         </div>
-        <h6 className="text-lg font-serif mt-10 lg:mt-0">Leaderboard</h6>
+        <h6 className="text-xl font-serif mt-10 lg:mt-0">Leaderboard</h6>
         <TextBlock>
           According to the fancy-sounding Organismic Integration Theory,
           low-autonomy extrinsic motivators have the most harmful impact on
@@ -87,7 +87,7 @@ const Research = ({ highlightColor, title }) => (
           either not important or not important at all to their practice.
         </TextBlock>
       </div>
-      <div className="col-span-1 hidden lg:flex relative justify-center items-center">
+      <div className="col-span-1 hidden lg:flex lg:justify-end items-center">
         <StaticImage
           src="../../../images/png/breathwrk/research/leaderboard.png"
           alt="sustainable-future"

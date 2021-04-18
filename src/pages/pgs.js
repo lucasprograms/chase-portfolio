@@ -81,7 +81,12 @@ const BreathwrkPage = () => {
     <Layout headerColorInverted={true}>
       <SEO title="pgs" />
       <div className="relative" style={{ bottom: '70px' }}>
-        <StaticImage src="../images/png/pgs/hero.png" alt="pgs-hero" />
+        <div className="hidden md:block">
+          <StaticImage src="../images/png/pgs/hero.png" alt="pgs-hero" />
+        </div>
+        <div className="md:hidden">
+          <StaticImage src="../images/png/pgs/hero-mobile.png" alt="pgs-hero" />
+        </div>
       </div>
       <div className="mt-20">
         <TableOfContents contents={contents} />

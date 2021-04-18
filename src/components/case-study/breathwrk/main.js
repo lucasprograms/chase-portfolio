@@ -32,14 +32,13 @@ const BhukuMain = ({
       </BackgroundSection>
       <BackgroundSection backgroundColor={backgroundColor}>
         <ContentSection>
-          <Design title="Design" />
+          <Design title="Design" highlightColor={highlightColor} />
         </ContentSection>
       </BackgroundSection>
       <FinalPrototype
         videoSrc={VIDEO_SRC}
         videoTitle="breathwrk-final-prototype-video"
         prototypeLink={PROTOTYPE_LINK}
-        backgroundColor={backgroundColor}
         highlightColor={highlightColor}
         loads={loads}
         finalThoughts={finalThoughts}

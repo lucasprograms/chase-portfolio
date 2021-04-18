@@ -13,7 +13,7 @@ const TableOfContents = ({ contents }) => {
     </div>
   ))
 
-  return <ul className="sticky top-20 ml-5 max-h-1">{listItems}</ul>
+  return <ul className="sticky top-5 ml-5 max-h-1 z-50">{listItems}</ul>
 }
 
 TableOfContents.propTypes = {
