@@ -8,6 +8,10 @@ import Define from './define'
 import Research from './research'
 import Design from './design'
 
+const VIDEO_SRC = 'https://www.loom.com/embed/88d62074e7124de0a56e2839a4c4d87c'
+const PROTOTYPE_LINK =
+  'https://www.figma.com/proto/cfyYmc4DeI59tdMpjBXGa0/Breathwrk?node-id=76%3A1032&scaling=scale-down'
+
 const BhukuMain = ({
   highlightColor,
   backgroundColor,
@@ -18,7 +22,7 @@ const BhukuMain = ({
     <div>
       <BackgroundSection backgroundColor={backgroundColor}>
         <ContentSection>
-          <Define title="Define" />
+          <Define title="Define" highlightColor={highlightColor} />
         </ContentSection>
       </BackgroundSection>
       <BackgroundSection>
@@ -32,9 +36,9 @@ const BhukuMain = ({
         </ContentSection>
       </BackgroundSection>
       <FinalPrototype
-        videoSrc="https://www.loom.com/embed/88d62074e7124de0a56e2839a4c4d87c"
+        videoSrc={VIDEO_SRC}
         videoTitle="breathwrk-final-prototype-video"
-        prototypeLink="https://www.figma.com/proto/cfyYmc4DeI59tdMpjBXGa0/Breathwrk?node-id=76%3A1032&scaling=scale-down"
+        prototypeLink={PROTOTYPE_LINK}
         backgroundColor={backgroundColor}
         highlightColor={highlightColor}
         loads={loads}
