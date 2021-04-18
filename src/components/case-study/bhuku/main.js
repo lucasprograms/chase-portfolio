@@ -57,7 +57,7 @@ const BhukuMain = ({
 BhukuMain.propTypes = {
   highlightColor: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
-  loads: PropTypes.arrayOf(PropTypes.string).isRequired,
+  loads: PropTypes.arrayOf(PropTypes.object).isRequired,
   finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 

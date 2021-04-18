@@ -100,7 +100,7 @@ FinalPrototype.propTypes = {
   prototypeLink: PropTypes.string,
   videoSrc: PropTypes.string,
   videoTitle: PropTypes.string,
-  loads: PropTypes.arrayOf(PropTypes.string).isRequired,
+  loads: PropTypes.arrayOf(PropTypes.object).isRequired,
   finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 

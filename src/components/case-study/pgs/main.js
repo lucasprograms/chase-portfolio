@@ -39,8 +39,8 @@ const PgsMain = ({ backgroundColor, loads, finalThoughts }) => {
 
 PgsMain.propTypes = {
   backgroundColor: PropTypes.string.isRequired,
-  loads: PropTypes.array.isRequired,
-  finalThoughts: PropTypes.array.isRequired,
+  loads: PropTypes.arrayOf(PropTypes.object).isRequired,
+  finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default PgsMain
