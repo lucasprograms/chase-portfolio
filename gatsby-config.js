@@ -1,3 +1,5 @@
+const path = require(`path`)
+
 module.exports = {
   pathPrefix: '/chase-portfolio',
   siteMetadata: {
@@ -11,16 +13,16 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: path.join(__dirname, `src`, `images`),
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-gatsby-cloud`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

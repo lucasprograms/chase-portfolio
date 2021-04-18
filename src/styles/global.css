@@ -2,52 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Karla';
-  src: local('Karla'), url('../fonts/Karla/Karla-Medium.ttf') format('truetype');
+/* these tailwind classes were not applying without these ad-hoc definitions */
+
+.border-transparent {
+  border-color: transparent;
 }
 
-@font-face {
-  font-family: 'Karla Bold';
-  font-weight: 700;
-  src: local('Karla Bold'),
-    url('../fonts/Karla/Karla-Bold.ttf') format('truetype');
+.border-black {
+  border-color: black;
 }
 
-@font-face {
-  font-family: 'DM Mono';
-  src: local('DMMono-Regular'),
-    url('../fonts/DM-Mono/DMMono-Regular.ttf') format('truetype');
+.movie-responsive-height {
+  height: 24rem;
 }
 
-@font-face {
-  font-family: 'Butler';
-  src: local('Butler'),
-    url('../fonts/Butler/Butler_Medium.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Butler Bold';
-  src: local('Butler Bold'),
-    url('../fonts/Butler/Butler_Bold.otf') format('opentype');
-}
-
-html {
-  font-family: 'Karla';
-}
-
-h1 {
-  font-family: 'Butler Bold';
-  font-weight: 700;
-  font-size: 48px;
-}
-
-h2 {
-  font-family: 'Butler';
-  font-size: 36px;
-}
-
-h3 {
-  font-family: 'DM Mono';
-  font-size: 24px;
+@media screen and (min-width: 1024px) {
+  .movie-responsive-height {
+    height: 48rem;
+  }
 }

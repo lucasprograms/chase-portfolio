@@ -9,11 +9,10 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import Footer from './footer'
-import './layout.css'
+import Header from './header/header'
+import Footer from './footer/footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, headerBackgroundColor, headerColorInverted }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,10 +26,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="container mx-auto" style={{ maxWidth: '1280px' }}>
-      <div className="m-5">
+    <div>
+      <div className="container-fluid 2xl:container mx-auto 2xl:px-5">
         <Header
           email={data.site.siteMetadata?.email || `chase.mccain3@gmail.com`}
+          backgroundColor={headerBackgroundColor || '#FFFFFF'}
+          colorInverted={headerColorInverted}
         />
         <main>{children}</main>
         <Footer
@@ -45,6 +46,8 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  headerBackgroundColor: PropTypes.string,
+  headerColorInverted: PropTypes.bool,
 }
 
 export default Layout
