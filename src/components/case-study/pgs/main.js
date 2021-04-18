@@ -3,36 +3,41 @@ import PropTypes from 'prop-types'
 
 import FinalPrototype from '../final-prototype/final-prototype'
 import Define from './define'
+import Design from './design'
 import Research from './research'
+import Architecture from './architecture'
+import BackgroundSection from '../../util/layout/background-section'
+import ContentSection from '../../util/layout/content-section'
 
-const PgsMain = ({ highlightColor, backgroundColor, loads, finalThoughts }) => {
+const PgsMain = ({ backgroundColor, loads, finalThoughts }) => {
   return (
     <div>
-      <div className="grid grid-cols-1 lg:grid-cols-12 py-10 px-5 2xl:px-0">
-        <div className="lg:col-start-3 lg:col-span-9">
+      <BackgroundSection>
+        <ContentSection>
           <Define title="Define" />
-        </div>
-      </div>
-      <div
-        className="grid grid-cols-1 lg:grid-cols-12 py-10 px-5 2xl:px-0"
-        style={{ backgroundColor }}
-      >
-        <div className="lg:col-start-3 lg:col-span-9">
+        </ContentSection>
+      </BackgroundSection>
+      <BackgroundSection backgroundColor={backgroundColor}>
+        <ContentSection>
           <Research title="Research" />
-        </div>
-      </div>
-      <FinalPrototype
-        backgroundColor="#FFFFFF"
-        highlightColor="#FFFFFF"
-        loads={loads}
-        finalThoughts={finalThoughts}
-      />
+        </ContentSection>
+      </BackgroundSection>
+      <BackgroundSection>
+        <ContentSection>
+          <Architecture title="Architecture" />
+        </ContentSection>
+      </BackgroundSection>
+      <BackgroundSection backgroundColor={backgroundColor}>
+        <ContentSection>
+          <Design title="Design" />
+        </ContentSection>
+      </BackgroundSection>
+      <FinalPrototype loads={loads} finalThoughts={finalThoughts} />
     </div>
   )
 }
 
 PgsMain.propTypes = {
-  highlightColor: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
   loads: PropTypes.array.isRequired,
   finalThoughts: PropTypes.array.isRequired,

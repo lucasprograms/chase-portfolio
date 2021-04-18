@@ -1,18 +1,20 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { StaticImage } from 'gatsby-plugin-image'
+import SectionHeader from '../../util/section-header'
+import TextBlock from '../../util/text-block'
 
 const Design = ({ title }) => {
   return (
     <section id={title.toLowerCase()} className="py-10 lg:py-20">
       <div className="grid lg:grid-cols-6">
         <div className="lg:col-span-3 pr-5 2xl:pr-0">
-          <h2 className="text-3xl font-serif">{title}</h2>
-          <p className="text-base font-sans leading-relaxed mt-10">
+          <SectionHeader title={title} />
+          <TextBlock>
             With that in mind, I set out to design the app. I started by
             creating quick sketches of major screens, then created low-fidelity
             wireframes using Material Design for Android devices.
-          </p>
+          </TextBlock>
         </div>
         <div className="lg:col-span-6 flex justify-end mt-10">
           <StaticImage
@@ -31,19 +33,19 @@ const Design = ({ title }) => {
             />
           </div>
           <div className="lg:col-span-3 pr-5 2xl:pr-0 my-auto">
-            <p className="text-base font-sans leading-relaxed mt-10">
+            <TextBlock>
               Within the standards set by Material Design, I created the app’s
               branding and UI. Pulling from my user interviews, where the most
               common resources were sites like the New York Times and the New
               Yorker, I wanted to create a clean, simple, and inviting design.
-            </p>
-            <p className="text-base font-sans leading-relaxed mt-10">
+            </TextBlock>
+            <TextBlock>
               With my UI kit created, I started designing high-fidelity mockups
               of the app’s major screens. At each stage, iterated the designs
               through feedback from my Designlab mentors and peers. For my final
               prototype, I also conducted user testing to determine needed
               iterations.
-            </p>
+            </TextBlock>
           </div>
         </div>
         <div className="lg:col-span-6">
@@ -51,6 +53,7 @@ const Design = ({ title }) => {
             src="../../../images/png/bhuku/design/final-frames.png"
             alt="bhuku-sketches"
             placeholder="blurred"
+            height={700}
           />
         </div>
       </div>

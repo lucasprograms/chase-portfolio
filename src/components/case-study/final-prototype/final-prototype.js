@@ -1,4 +1,5 @@
 import * as React from 'react'
+import PropTypes from 'prop-types'
 
 const FinalPrototype = ({
   highlightColor,
@@ -16,8 +17,10 @@ const FinalPrototype = ({
       id="prototype"
     >
       <div className="lg:col-start-3 lg:col-span-10 grid lg:grid-cols-6">
-        <h2 className="font-serif text-4xl mb-10 lg:col-span-6">
-          The Final Prototype
+        <h2
+          className={`font-serif text-4xl lg:col-span-6 ${videoSrc && 'mb-10'}`}
+        >
+          {videoSrc ? 'The Final Prototype' : 'Final Thoughts'}
         </h2>
         {videoSrc && (
           <div className="lg:col-span-5 movie-responsive-height">
@@ -54,14 +57,13 @@ const FinalPrototype = ({
         <div className="lg:col-span-6 mt-10 grid lg:grid-cols-6 grid-cols-2">
           <div className="my-5 lg:col-span-6 col-span-2">
             <span className="p-1" style={{ backgroundColor: highlightColor }}>
-              "There’s loads more that went into the creation of this feature" —
-              Ron Weasley
+              There’s loads more that went into the creation of this feature —
             </span>
           </div>
           {loads.map((load, index) => (
             <div
               key={load.title}
-              className={`col-span-1 ${index >= 2 ? 'mt-10' : ''}`}
+              className={`col-span-1 ${index >= 2 ? 'mt-10 lg:mt-0' : ''}`}
             >
               <h5 className="font-bold">{load.title}</h5>
               <ul className="mt-3">
@@ -74,8 +76,8 @@ const FinalPrototype = ({
             </div>
           ))}
         </div>
-        <div className="lg:col-span-3 mt-20 lg:mt-32">
-          <h4 className="font-serif text-3xl">Final Thoughts</h4>
+        <div className={`lg:col-span-3 mt-10 ${videoSrc && 'lg:mt-32'}`}>
+          {videoSrc && <h4 className="font-serif text-3xl">Final Thoughts</h4>}
           {finalThoughts.map((finalThought) => (
             <p key={finalThought} className="mt-10">
               {finalThought}
@@ -85,6 +87,21 @@ const FinalPrototype = ({
       </div>
     </section>
   )
+}
+
+FinalPrototype.defaultProps = {
+  backgroundColor: '#FFFFFF',
+  highlightColor: '#FFFFFF',
+}
+
+FinalPrototype.propTypes = {
+  backgroundColor: PropTypes.string,
+  highlightColor: PropTypes.string,
+  prototypeLink: PropTypes.string,
+  videoSrc: PropTypes.string,
+  videoTitle: PropTypes.string,
+  loads: PropTypes.arrayOf(PropTypes.string).isRequired,
+  finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default FinalPrototype

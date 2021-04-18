@@ -5,6 +5,12 @@ import Define from './define'
 import Research from './research'
 import Design from './design'
 import FinalPrototype from '../final-prototype/final-prototype'
+import BackgroundSection from '../../util/layout/background-section'
+import ContentSection from '../../util/layout/content-section'
+
+const VIDEO_SRC = 'https://www.loom.com/embed/319e54e4491d4c1f92dedf3f52e32c98'
+const PROTOTYPE_LINK =
+  'https://www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=737%3A205'
 
 const BhukuMain = ({
   highlightColor,
@@ -14,32 +20,31 @@ const BhukuMain = ({
 }) => {
   return (
     <div>
-      <div
-        className="grid grid-cols-1 lg:grid-cols-12 py-10 px-5 2xl:px-0"
-        style={{ backgroundColor }}
-      >
-        <div className="lg:col-start-3 lg:col-span-9">
+      <BackgroundSection backgroundColor={backgroundColor}>
+        <ContentSection>
           <Define
             title="Define"
             highlightColor={highlightColor}
             backgroundColor={backgroundColor}
           />
+        </ContentSection>
+        <ContentSection>
           <Research
             title="Research"
             highlightColor={highlightColor}
             backgroundColor={backgroundColor}
           />
-        </div>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-12 py-10 pl-5 2xl:pl-0">
-        <div className="lg:col-start-3 lg:col-span-10">
+        </ContentSection>
+      </BackgroundSection>
+      <BackgroundSection>
+        <ContentSection lgColSpan="10">
           <Design title="Design" />
-        </div>
-      </div>
+        </ContentSection>
+      </BackgroundSection>
       <FinalPrototype
-        videoSrc="https://www.loom.com/embed/319e54e4491d4c1f92dedf3f52e32c98"
+        videoSrc={VIDEO_SRC}
         videoTitle="bhuku-final-prototype-video"
-        prototypeLink="https://www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=737%3A205"
+        prototypeLink={PROTOTYPE_LINK}
         backgroundColor={backgroundColor}
         highlightColor={highlightColor}
         loads={loads}
@@ -52,8 +57,8 @@ const BhukuMain = ({
 BhukuMain.propTypes = {
   highlightColor: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
-  loads: PropTypes.array.isRequired,
-  finalThoughts: PropTypes.array.isRequired,
+  loads: PropTypes.arrayOf(PropTypes.string).isRequired,
+  finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
 }
 
 export default BhukuMain

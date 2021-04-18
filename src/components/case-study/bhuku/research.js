@@ -1,25 +1,27 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { StaticImage } from 'gatsby-plugin-image'
+import SectionHeader from '../../util/section-header'
+import TextBlock from '../../util/text-block'
 
 const Define = ({ title, highlightColor }) => {
   return (
     <section id={title.toLowerCase()} className="py-10 lg:py-20">
       <div className="grid lg:grid-cols-6">
         <div className="lg:col-span-3">
-          <h2 className="text-3xl font-serif">{title}</h2>
-          <p className="text-base font-sans leading-relaxed mt-10">
+          <SectionHeader title={title} />
+          <TextBlock>
             To find out, I conducted six user interviews with regular readers. I
             wanted to understand how they found and chose new books to read, and
             how they currently kept track of what they’d read.
-          </p>
-          <p className="text-base font-sans leading-relaxed mt-10">
+          </TextBlock>
+          <TextBlock>
             There were two major takeaways from my user interviews. First, the
             folks I spoke with drew their book recommendations from a few key
             places: Goodreads, trusted publications (e.g. the New York Times),
             and from friends and family. Second, each of them had, at some
             point, tried and failed to keep track of their reading.
-          </p>
+          </TextBlock>
         </div>
         <div className="lg:col-span-3">
           <StaticImage
@@ -39,7 +41,7 @@ const Define = ({ title, highlightColor }) => {
           />
         </div>
         <div className="lg:col-start-5 lg:col-span-3">
-          <p className="font-sans leading-relaxed mt-10">
+          <TextBlock>
             <span className="text-lg">
               “I’ve been wanting to start keeping track of my books, but it’s
               sort of a daunting task.”
@@ -48,19 +50,19 @@ const Define = ({ title, highlightColor }) => {
             <div className="text-center pt-1">
               <span> - Maddy, interviewee</span>
             </div>
-          </p>
-          <p className="text-base font-sans leading-relaxed mt-10">
+          </TextBlock>
+          <TextBlock>
             <span style={{ backgroundColor: highlightColor }}>
               I wanted to integrate these findings in a way that was mutually
               beneficial: incentivize users to track their past books by using
               their entries to tailor personalized recommendations.
             </span>
-          </p>
+          </TextBlock>
         </div>
       </div>
       {/* ARRANGEMENT FOR MD SCREENS AND DOWN */}
       <div className="grid mt-5 lg:hidden">
-        <p className="font-sans leading-relaxed">
+        <TextBlock>
           <span className="text-lg">
             “I’ve been wanting to start keeping track of my books, but it’s sort
             of a daunting task.”
@@ -69,7 +71,7 @@ const Define = ({ title, highlightColor }) => {
           <div className="text-center pt-1">
             <span> - Maddy, interviewee</span>
           </div>
-        </p>
+        </TextBlock>
         <div className="lg:col-span-3">
           <StaticImage
             src="../../../images/png/bhuku/research/book-info.png"
@@ -77,13 +79,13 @@ const Define = ({ title, highlightColor }) => {
             placeholder="blurred"
           />
         </div>
-        <p className="text-base font-sans leading-relaxed">
+        <TextBlock>
           <span style={{ backgroundColor: highlightColor }}>
             I wanted to integrate these findings in a way that was mutually
             beneficial: incentivize users to track their past books by using
             their entries to tailor personalized recommendations.
           </span>
-        </p>
+        </TextBlock>
       </div>
     </section>
   )

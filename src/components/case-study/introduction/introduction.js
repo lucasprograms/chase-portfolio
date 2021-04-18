@@ -35,7 +35,6 @@ const Introduction = ({ blurbs, highlight, title }) => {
 }
 
 Introduction.propTypes = {
-  contents: PropTypes.array.isRequired,
   blurbs: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
   highlight: PropTypes.object,
