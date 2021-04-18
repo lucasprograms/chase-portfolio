@@ -27,7 +27,7 @@ const BhukuMain = ({
       </BackgroundSection>
       <BackgroundSection>
         <ContentSection>
-          <Research title="Research" />
+          <Research title="Research" highlightColor={highlightColor} />
         </ContentSection>
       </BackgroundSection>
       <BackgroundSection backgroundColor={backgroundColor}>
