@@ -170,25 +170,6 @@ const Design = ({ title, highlightColor }) => (
         />
       </div>
     </div>
-    <div className="hidden lg:grid lg:grid-cols-2 mt-10 lg:mt-32">
-      <div className="col-span-1">
-        <h6 className="text-xl font-serif mt-10">Iterations</h6>
-        <TextBlock>
-          Each page went through lots of iterations, starting with the most
-          basic of sketches. The pages were iterated based on feedback from my
-          mentor, and through user testing. Here’s an example of the “Week”
-          page’s various stages:
-        </TextBlock>
-      </div>
-      <div className="col-span-2 mt-20">
-        <StaticImage
-          src="../../../images/png/breathwrk/design/wireframes.png"
-          alt="wireframes"
-          placeholder="blurred"
-          height={700}
-        />
-      </div>
-    </div>
   </div>
 )
 
