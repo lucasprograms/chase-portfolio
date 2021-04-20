@@ -26,13 +26,10 @@ const Layout = ({ children, headerBackgroundColor, headerColorInverted }) => {
     }
   `)
 
-  const location = useLocation()
-  console.log(location)
-
-  const isWorkOrAbout = ['/', '/about'].includes(useLocation().pathname)
+  const isWorkOrAbout = ['/', '/about/'].includes(useLocation().pathname)
 
   return (
-    <div className={`relative ${isWorkOrAbout ? 'overflow-x-auto' : ''}`}>
+    <div className={`relative ${isWorkOrAbout ? 'overflow-x-hidden' : ''}`}>
       <div
         className={`container-fluid mx-auto 2xl:px-5 ${
           isWorkOrAbout ? 'lg:container' : '2xl:container'
