@@ -93,14 +93,14 @@ const BreathwrkPage = () => {
     <Layout headerBackgroundColor={BACKGROUND_COLOR}>
       <SEO title="breathwrk" />
       <div style={{ backgroundColor: BACKGROUND_COLOR }}>
-        <div className="hidden md:block">
+        <div className="hidden md:flex">
           <StaticImage
             src="../images/png/breathwrk/hero.png"
             alt="breathwrk-hero"
             placeholder="blurred"
           />
         </div>
-        <div className="md:hidden relative bottom-24">
+        <div className="flex md:hidden">
           <StaticImage
             src="../images/png/breathwrk/hero-mobile.png"
             alt="breathwrk-hero"
