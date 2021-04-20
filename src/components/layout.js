@@ -26,7 +26,7 @@ const Layout = ({ children, headerBackgroundColor, headerColorInverted }) => {
     }
   `)
 
-  const isWorkOrAbout = ['/', '/about/'].includes(useLocation().pathname)
+  const isWorkOrAbout = ['/', '/about'].includes(useLocation().pathname)
 
   return (
     <div className={`relative ${isWorkOrAbout ? 'overflow-x-hidden' : ''}`}>
