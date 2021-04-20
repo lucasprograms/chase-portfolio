@@ -73,6 +73,11 @@ const finalThoughts = [
   'The final product solves for my original How Might We statement, creating an app that incentivizes engagement with personalized recommendations, and adheres to Material Design guidelines while still being simple, clean, and beautiful.',
 ]
 
+const VIDEO_SRC = 'https://www.loom.com/embed/319e54e4491d4c1f92dedf3f52e32c98'
+
+const PROTOTYPE_LINK =
+  'https://www.figma.com/proto/rzEpSlku3u3bRzTewmEJUS/Bhuku?node-id=27%3A697&scaling=scale-down'
+
 const HIGHLIGHT_COLOR = '#F2B5B8'
 
 const BACKGROUND_COLOR = '#EAECFE'
@@ -114,6 +119,8 @@ const BreathwrkPage = () => {
           backgroundColor={BACKGROUND_COLOR}
           loads={loads}
           finalThoughts={finalThoughts}
+          videoSrc={VIDEO_SRC}
+          prototypeLink={PROTOTYPE_LINK}
         />
       </div>
     </Layout>

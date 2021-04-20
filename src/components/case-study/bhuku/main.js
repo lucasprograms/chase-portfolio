@@ -8,15 +8,13 @@ import FinalPrototype from '../final-prototype/final-prototype'
 import BackgroundSection from '../../util/layout/background-section'
 import ContentSection from '../../util/layout/content-section'
 
-const VIDEO_SRC = 'https://www.loom.com/embed/319e54e4491d4c1f92dedf3f52e32c98'
-const PROTOTYPE_LINK =
-  'https://www.figma.com/proto/rzEpSlku3u3bRzTewmEJUS/Bhuku?node-id=27%3A697&scaling=scale-down'
-
 const BhukuMain = ({
   highlightColor,
   backgroundColor,
   loads,
   finalThoughts,
+  videoSrc,
+  prototypeLink,
 }) => {
   return (
     <div>
@@ -42,9 +40,9 @@ const BhukuMain = ({
         </ContentSection>
       </BackgroundSection>
       <FinalPrototype
-        videoSrc={VIDEO_SRC}
         videoTitle="bhuku-final-prototype-video"
-        prototypeLink={PROTOTYPE_LINK}
+        videoSrc={videoSrc}
+        prototypeLink={prototypeLink}
         backgroundColor={backgroundColor}
         highlightColor={highlightColor}
         loads={loads}
@@ -59,6 +57,8 @@ BhukuMain.propTypes = {
   backgroundColor: PropTypes.string.isRequired,
   loads: PropTypes.arrayOf(PropTypes.object).isRequired,
   finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
+  videoSrc: PropTypes.string.isRequired,
+  prototypeLink: PropTypes.string.isRequired,
 }
 
 export default BhukuMain

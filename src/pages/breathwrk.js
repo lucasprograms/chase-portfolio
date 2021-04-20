@@ -79,6 +79,11 @@ const finalThoughts = [
   'There are so many fun ways to expand and improve upon this project, like connecting with a wider array of Breathwrk’s users to expanding testing and research, or incorporating other intrinsic motivators into the feature, like a buddy system or a post-session emotional check-in. ',
 ]
 
+const VIDEO_SRC = 'https://www.loom.com/embed/88d62074e7124de0a56e2839a4c4d87c'
+
+const PROTOTYPE_LINK =
+  'https://www.figma.com/proto/cfyYmc4DeI59tdMpjBXGa0/Breathwrk?node-id=76%3A1032&scaling=scale-down'
+
 const HIGHLIGHT_COLOR = '#F7ECA0'
 
 const BACKGROUND_COLOR = '#E2E1F1'
@@ -121,6 +126,8 @@ const BreathwrkPage = () => {
           backgroundColor={BACKGROUND_COLOR}
           loads={loads}
           finalThoughts={finalThoughts}
+          videoSrc={VIDEO_SRC}
+          prototypeLink={PROTOTYPE_LINK}
         />
       </div>
     </Layout>
