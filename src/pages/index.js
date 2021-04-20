@@ -24,7 +24,7 @@ const IndexPage = () => (
           </p>
         </div>
         <div
-          className="absolute lg:static top-0 left-0 right-0 w-full overflow-x-hidden"
+          className="absolute lg:static top-0 left-0 right-0 w-full overflow-hidden"
           style={{ height: '920px' }}
         >
           <BlobHero className="absolute top-0" />
