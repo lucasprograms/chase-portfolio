@@ -10,7 +10,7 @@ import ContentSection from '../../util/layout/content-section'
 
 const VIDEO_SRC = 'https://www.loom.com/embed/319e54e4491d4c1f92dedf3f52e32c98'
 const PROTOTYPE_LINK =
-  'https://www.figma.com/file/401B4AhQZSy0RdMfTGlafp/Portfolio?node-id=737%3A205'
+  'https://www.figma.com/proto/rzEpSlku3u3bRzTewmEJUS/Bhuku?node-id=27%3A697&scaling=scale-down'
 
 const BhukuMain = ({
   highlightColor,

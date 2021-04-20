@@ -1,5 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
+import TextBlock from '../../util/text-block'
 
 const FinalPrototype = ({
   highlightColor,
@@ -45,6 +46,8 @@ const FinalPrototype = ({
               <a
                 href={prototypeLink}
                 className="p-1 hover:underline"
+                target="_blank"
+                rel="noreferrer"
                 style={{ backgroundColor: highlightColor }}
               >
                 <strong className="text-xl">
@@ -79,9 +82,7 @@ const FinalPrototype = ({
         <div className={`lg:col-span-3 mt-10 ${videoSrc && 'lg:mt-32'}`}>
           {videoSrc && <h4 className="font-serif text-3xl">Final Thoughts</h4>}
           {finalThoughts.map((finalThought) => (
-            <p key={finalThought} className="mt-10">
-              {finalThought}
-            </p>
+            <TextBlock key={finalThought}>{finalThought}</TextBlock>
           ))}
         </div>
       </div>

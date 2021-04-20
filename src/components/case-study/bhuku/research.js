@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticImage } from 'gatsby-plugin-image'
 import SectionHeader from '../../util/section-header'
 import TextBlock from '../../util/text-block'
+import Quote from '../../util/quote'
 
 const Define = ({ title, highlightColor }) => {
   return (
@@ -41,16 +42,12 @@ const Define = ({ title, highlightColor }) => {
           />
         </div>
         <div className="lg:col-start-5 lg:col-span-3">
-          <TextBlock>
-            <span className="text-lg">
-              “I’ve been wanting to start keeping track of my books, but it’s
-              sort of a daunting task.”
-            </span>
-            <br />
-            <div className="text-center pt-1">
-              <span> - Maddy, interviewee</span>
-            </div>
-          </TextBlock>
+          <Quote
+            text="“I’ve been wanting to start keeping track of my books, but it’s
+            sort of a daunting task.”"
+            name="Maddy"
+          />
+
           <TextBlock>
             <span style={{ backgroundColor: highlightColor }}>
               I wanted to integrate these findings in a way that was mutually
@@ -62,16 +59,11 @@ const Define = ({ title, highlightColor }) => {
       </div>
       {/* ARRANGEMENT FOR MD SCREENS AND DOWN */}
       <div className="grid mt-5 lg:hidden">
-        <TextBlock>
-          <span className="text-lg">
-            “I’ve been wanting to start keeping track of my books, but it’s sort
-            of a daunting task.”
-          </span>
-          <br />
-          <div className="text-center pt-1">
-            <span> - Maddy, interviewee</span>
-          </div>
-        </TextBlock>
+        <Quote
+          text="“I’ve been wanting to start keeping track of my books, but it’s
+            sort of a daunting task.”"
+          name="Maddy"
+        />
         <div className="lg:col-span-3">
           <StaticImage
             src="../../../images/png/bhuku/research/book-info.png"
