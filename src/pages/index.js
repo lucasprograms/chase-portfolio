@@ -15,10 +15,10 @@ const IndexPage = () => (
         style={{ height: '920px' }}
       >
         <div className="flex flex-col justify-start lg:justify-center z-10 mt-60 md:mt-80 lg:mt-0">
-          <h1 className="text-5xl font-serif max-w-md self-center mb-5">
+          <h1 className="text-5xl leading-snug font-serif max-w-md self-center mb-5">
             Hey, I’m Chase—I’m a UX Designer and cat enthusiast.
           </h1>
-          <p className="font-sans text-2xl max-w-md self-center">
+          <p className="font-sans text-xl leading-relaxed font-normal max-w-md self-center">
             I love listening to and exploring people’s experiences, and using
             what I learn to create products that make them happy.
           </p>
@@ -40,6 +40,7 @@ const IndexPage = () => (
             src="../images/png/breathwrk.png"
             alt="breathwrk"
             placeholder="blurred"
+            width={700}
           />
         </CaseStudy>
       </section>
@@ -53,6 +54,7 @@ const IndexPage = () => (
             src="../images/png/pgs.png"
             alt="pgs"
             placeholder="blurred"
+            width={700}
           />
         </CaseStudy>
       </section>
@@ -66,6 +68,7 @@ const IndexPage = () => (
             src="../images/png/bhuku.png"
             alt="bhuku"
             placeholder="blurred"
+            width={700}
           />
         </CaseStudy>
       </section>

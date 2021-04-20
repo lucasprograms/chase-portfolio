@@ -7,8 +7,8 @@ import { Link } from 'gatsby'
 const CaseStudy = ({ title, blurb, children, href }) => {
   return (
     <div className="self-center flex flex-col-reverse justify-between lg:justify-around lg:flex-row shadow-2xl p-8 py-12 mb-20 rounded-mb">
-      <main className="flex-1">{children}</main>
-      <div className="flex flex-col justify-center max-w-md mb-10">
+      <div>{children}</div>
+      <div className="flex flex-col justify-center max-w-md mb-10 ml-10 xl:ml-0">
         <h3 className="font-serif text-4xl mb-5">{title}</h3>
         <p className="font-sans text-lg mb-5">{blurb}</p>
 
