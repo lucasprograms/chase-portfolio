@@ -6,6 +6,7 @@
  */
 
 import * as React from 'react'
+import { useLocation } from '@reach/router'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -25,9 +26,15 @@ const Layout = ({ children, headerBackgroundColor, headerColorInverted }) => {
     }
   `)
 
+  const isWorkOrAbout = ['/', '/about'].includes(useLocation().pathname)
+
   return (
-    <div>
-      <div className="container-fluid 2xl:container mx-auto 2xl:px-5">
+    <div className={`relative ${isWorkOrAbout ? 'overflow-x-hidden' : ''}`}>
+      <div
+        className={`container-fluid mx-auto 2xl:px-5 ${
+          isWorkOrAbout ? 'lg:container' : '2xl:container'
+        }`}
+      >
         <Header
           email={data.site.siteMetadata?.email || `chase.mccain3@gmail.com`}
           backgroundColor={headerBackgroundColor || '#FFFFFF'}

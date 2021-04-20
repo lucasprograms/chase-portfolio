@@ -29,12 +29,19 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
+  const getFormattedTitle = (unformattedTitle) => {
+    if (unformattedTitle === 'pgs') return 'PGS'
+    if (unformattedTitle === 'breathwrk') return 'Breathwrk'
+
+    return unformattedTitle
+  }
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={getFormattedTitle(title)}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       meta={[
         {

@@ -12,7 +12,6 @@ const contents = [
   { label: 'Defining the Problem', to: 'define' },
   { label: 'Research & Data', to: 'research' },
   { label: 'The Designs', to: 'design' },
-  { label: 'Final Prototype', to: 'prototype' },
 ]
 
 const introBlurbs = [

@@ -8,15 +8,13 @@ import Define from './define'
 import Research from './research'
 import Design from './design'
 
-const VIDEO_SRC = 'https://www.loom.com/embed/88d62074e7124de0a56e2839a4c4d87c'
-const PROTOTYPE_LINK =
-  'https://www.figma.com/proto/cfyYmc4DeI59tdMpjBXGa0/Breathwrk?node-id=76%3A1032&scaling=scale-down'
-
 const BhukuMain = ({
   highlightColor,
   backgroundColor,
   loads,
   finalThoughts,
+  videoSrc,
+  prototypeLink,
 }) => {
   return (
     <div>
@@ -36,9 +34,9 @@ const BhukuMain = ({
         </ContentSection>
       </BackgroundSection>
       <FinalPrototype
-        videoSrc={VIDEO_SRC}
         videoTitle="breathwrk-final-prototype-video"
-        prototypeLink={PROTOTYPE_LINK}
+        videoSrc={videoSrc}
+        prototypeLink={prototypeLink}
         highlightColor={highlightColor}
         loads={loads}
         finalThoughts={finalThoughts}
@@ -52,6 +50,8 @@ BhukuMain.propTypes = {
   backgroundColor: PropTypes.string.isRequired,
   loads: PropTypes.arrayOf(PropTypes.object).isRequired,
   finalThoughts: PropTypes.arrayOf(PropTypes.string).isRequired,
+  videoSrc: PropTypes.string.isRequired,
+  prototypeLink: PropTypes.string.isRequired,
 }
 
 export default BhukuMain

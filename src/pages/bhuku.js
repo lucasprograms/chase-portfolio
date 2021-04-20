@@ -12,7 +12,6 @@ const contents = [
   { label: 'Defining the Problem', to: 'define' },
   { label: 'Research', to: 'research' },
   { label: 'Design', to: 'design' },
-  { label: 'Final Prototype', to: 'prototype' },
 ]
 
 const introBlurbs = [
@@ -74,6 +73,11 @@ const finalThoughts = [
   'The final product solves for my original How Might We statement, creating an app that incentivizes engagement with personalized recommendations, and adheres to Material Design guidelines while still being simple, clean, and beautiful.',
 ]
 
+const VIDEO_SRC = 'https://www.loom.com/embed/5b4f1712ee454377bacf6148ea2bb2ac'
+
+const PROTOTYPE_LINK =
+  'https://www.figma.com/proto/rzEpSlku3u3bRzTewmEJUS/Bhuku?node-id=27%3A697&scaling=scale-down'
+
 const HIGHLIGHT_COLOR = '#F2B5B8'
 
 const BACKGROUND_COLOR = '#EAECFE'
@@ -83,14 +87,14 @@ const BreathwrkPage = () => {
     <Layout headerBackgroundColor={BACKGROUND_COLOR}>
       <SEO title="bhuku" />
       <div style={{ backgroundColor: BACKGROUND_COLOR }}>
-        <div className="hidden md:block">
+        <div className="hidden md:flex">
           <StaticImage
             src="../images/png/bhuku/hero.png"
             alt="bhuku-hero"
             placeholder="blurred"
           />
         </div>
-        <div className="md:hidden relative bottom-24">
+        <div className="flex md:hidden">
           <StaticImage
             src="../images/png/bhuku/hero-mobile.png"
             alt="bhuku-hero"
@@ -115,6 +119,8 @@ const BreathwrkPage = () => {
           backgroundColor={BACKGROUND_COLOR}
           loads={loads}
           finalThoughts={finalThoughts}
+          videoSrc={VIDEO_SRC}
+          prototypeLink={PROTOTYPE_LINK}
         />
       </div>
     </Layout>

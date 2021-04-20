@@ -7,7 +7,7 @@ import Quote from '../../util/quote'
 
 const Design = ({ title, highlightColor }) => (
   <div id={title.toLowerCase()}>
-    <div className="grid lg:grid-cols-2 mt-10 lg:mt-32">
+    <div className="grid lg:grid-cols-2">
       <div className="col-span-1">
         <h4 className="text-2xl font-serif mb-5 flex items-center">
           <span style={{ color: '#00D715' }} className="mr-2">
@@ -25,7 +25,7 @@ const Design = ({ title, highlightColor }) => (
         </div>
       </div>
       <div className="col-span-1 flex flex-col justify-center">
-        <h6 className="text-xl font-serif mt-10 lg:mt-0">
+        <h6 className="text-2xl font-serif mt-10 lg:mt-0">
           Why a calendar tracker?
         </h6>
         <TextBlock>
@@ -49,7 +49,7 @@ const Design = ({ title, highlightColor }) => (
         </TextBlock>
       </div>
     </div>
-    <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-32 lg:gap-x-32">
+    <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-20 lg:gap-x-32">
       <div className="col-span-1 lg:col-span-2">
         <h6 className="text-xl font-serif mt-10">Notification Feature</h6>
       </div>
@@ -76,7 +76,7 @@ const Design = ({ title, highlightColor }) => (
         />
       </div>
     </div>
-    <div className="grid lg:grid-cols-2 mt-10 lg:mt-32 gap-x-20">
+    <div className="grid lg:grid-cols-2 mt-10 lg:mt-20 gap-x-20">
       <div className="col-span-1 lg:col-span-2">
         <h6 className="text-xl font-serif mt-10">Data Visualization</h6>
       </div>
@@ -106,7 +106,7 @@ const Design = ({ title, highlightColor }) => (
         />
       </div>
     </div>
-    <div className="grid lg:grid-cols-2 mt-10 lg:mt-32 gap-x-20">
+    <div className="grid lg:grid-cols-2 mt-10 lg:mt-20 gap-x-20">
       <div className="col-span-1 hidden lg:block">
         <StaticImage
           src="../../../images/png/breathwrk/design/finished-visual.png"
@@ -137,7 +137,7 @@ const Design = ({ title, highlightColor }) => (
         />
       </div>
     </div>
-    <div className="grid lg:grid-cols-2 mt-10 lg:mt-32 gap-x-20">
+    <div className="grid lg:grid-cols-2 mt-10 lg:mt-20 gap-x-20">
       <div className="col-span-1">
         <h6 className="text-xl font-serif mt-10">Challenge Mode</h6>
         <TextBlock>
@@ -165,25 +165,6 @@ const Design = ({ title, highlightColor }) => (
         <StaticImage
           src="../../../images/png/breathwrk/design/challenge-mode.png"
           alt="challenge-mode"
-          placeholder="blurred"
-          height={700}
-        />
-      </div>
-    </div>
-    <div className="hidden lg:grid lg:grid-cols-2 mt-10 lg:mt-32">
-      <div className="col-span-1">
-        <h6 className="text-xl font-serif mt-10">Iterations</h6>
-        <TextBlock>
-          Each page went through lots of iterations, starting with the most
-          basic of sketches. The pages were iterated based on feedback from my
-          mentor, and through user testing. Here’s an example of the “Week”
-          page’s various stages:
-        </TextBlock>
-      </div>
-      <div className="col-span-2 mt-20">
-        <StaticImage
-          src="../../../images/png/breathwrk/design/wireframes.png"
-          alt="wireframes"
           placeholder="blurred"
           height={700}
         />
