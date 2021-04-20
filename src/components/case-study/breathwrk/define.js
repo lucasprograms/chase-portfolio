@@ -46,7 +46,7 @@ const Define = ({ title, highlightColor }) => (
         />
       </div>
     </div>
-    <div className="grid lg:grid-cols-2 mt-10 lg:mt-32">
+    <div className="grid lg:grid-cols-2 mt-10 lg:mt-20">
       <div className="col-span-1 flex justify-center items-center">
         <StaticImage
           src="../../../images/png/breathwrk/define/exhale.png"
@@ -74,7 +74,7 @@ const Define = ({ title, highlightColor }) => (
         </TextBlock>
       </div>
     </div>
-    <div className="grid lg:grid-cols-2 mt-10 lg:mt-32">
+    <div className="grid lg:grid-cols-2 mt-10 lg:mt-20">
       <div className="col-span-1">
         <div className="flex lg:hidden justify-center">
           <StaticImage
@@ -109,7 +109,7 @@ const Define = ({ title, highlightColor }) => (
         />
       </div>
     </div>
-    <div className="flex justify-center mt-10 lg:mt-32">
+    <div className="flex justify-center mt-10 lg:mt-20">
       <div style={{ maxWidth: '500px' }} className="text-center inline-block">
         <TextBlock textSize="2xl">
           <span style={{ backgroundColor: highlightColor }}>
