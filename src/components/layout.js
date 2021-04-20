@@ -6,6 +6,7 @@
  */
 
 import * as React from 'react'
+import { useLocation } from '@reach/router'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -25,8 +26,17 @@ const Layout = ({ children, headerBackgroundColor, headerColorInverted }) => {
     }
   `)
 
+  const location = useLocation()
+  console.log(location)
+
   return (
-    <div>
+    <div
+      className={`relative ${
+        ['/', '/about'].includes(useLocation().pathname)
+          ? 'overflow-x-auto'
+          : ''
+      }`}
+    >
       <div className="container-fluid 2xl:container mx-auto 2xl:px-5">
         <Header
           email={data.site.siteMetadata?.email || `chase.mccain3@gmail.com`}
