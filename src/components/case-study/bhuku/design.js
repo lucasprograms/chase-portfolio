@@ -41,7 +41,7 @@ const Design = ({ title }) => {
             </TextBlock>
             <TextBlock>
               With my UI kit created, I started designing high-fidelity mockups
-              of the app’s major screens. At each stage, iterated the designs
+              of the app’s major screens. At each stage, I iterated the designs
               through feedback from my Designlab mentors and peers. For my final
               prototype, I also conducted user testing to determine needed
               iterations.
