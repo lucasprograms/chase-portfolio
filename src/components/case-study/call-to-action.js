@@ -10,7 +10,7 @@ const CaseStudy = ({ title, blurb, children, href }) => {
       <main className="flex-1">{children}</main>
       <div className="flex flex-col justify-center max-w-md mb-10">
         <h3 className="font-serif text-4xl mb-5">{title}</h3>
-        <p className="font-sans text-base mb-5">{blurb}</p>
+        <p className="font-sans text-lg mb-5">{blurb}</p>
 
         <Link
           to={href}
