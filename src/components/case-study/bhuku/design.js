@@ -6,7 +6,7 @@ import TextBlock from '../../util/text-block'
 
 const Design = ({ title }) => {
   return (
-    <section id={title.toLowerCase()} className="py-10 lg:py-20">
+    <section id={title.toLowerCase()}>
       <div className="grid lg:grid-cols-6">
         <div className="lg:col-span-3 pr-5 2xl:pr-0">
           <SectionHeader title={title} />

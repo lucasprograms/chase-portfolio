@@ -13,7 +13,7 @@ const FinalPrototype = ({
 }) => {
   return (
     <section
-      className="grid grid-cols-1 lg:grid-cols-12 mt-10 pb-20 px-5 2xl:px-0 lg:mt-32"
+      className="grid grid-cols-1 lg:grid-cols-12 pt-10 pb-20 px-5 2xl:px-0 lg:pt-20"
       style={{ backgroundColor }}
       id="prototype"
     >
