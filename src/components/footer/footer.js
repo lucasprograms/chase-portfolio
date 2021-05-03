@@ -30,7 +30,11 @@ const Footer = ({ email, author, linkedInUrl }) => (
           <span>{email}</span>
         </a>
         {linkedInUrl && (
-          <a href={linkedInUrl} className="font-sans mb-2 items-center flex ">
+          <a
+            href={linkedInUrl}
+            className="font-sans mb-2 items-center flex"
+            target="_blank"
+          >
             <LinkedIn className="mr-2" />
             <span>LinkedIn</span>
           </a>
