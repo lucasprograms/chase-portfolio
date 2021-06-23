@@ -19,8 +19,7 @@ const IndexPage = () => (
             Hey, I’m Chase—I’m a UX Designer and cat enthusiast.
           </h1>
           <p className="font-sans text-xl leading-relaxed font-normal max-w-md self-center">
-            I love listening to and exploring people’s experiences, and using
-            what I learn to create products that make them happy.
+            Currently a Product Designer at ACTEX Learning.
           </p>
         </div>
         <div
